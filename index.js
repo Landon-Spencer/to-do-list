@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItemElement = document.createElement('input');
     newItemElement.type = 'checkbox';
     newItemElement.id = item;
+    newItemElement.addEventListener('click', () => {
+      console.log(`Item ${item} has been clicked`);
+
+    })
     const newItemLabel = document.createElement('label');
     newItemLabel.htmlFor = item;
     newItemLabel.innerHTML = item;
@@ -18,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toDoItems.appendChild(document.createElement('br'));
     addItem.value = '';
   });
+
+
 
 });
 
