@@ -6,8 +6,8 @@ Clone the repository and open index.html in the browser... at least that is what
 ## How to use it
 First think of something that you need to do. Then before you forget what it was quickly type it into the add item to list box. Now your task will be stored in the Your To-Do Items. At this point you can check the box when you have made progress or completed the task. This will cross the item out but leave it on the list for know. If you know that you are compleatly done with the task you can click the `Move item to completed list` button.
 
-[!CAUTION]
-Once the `Move item to completed list` button is used that item is moved to the `Completed To-Do Items` box and can't be undone at this time.
+> [!CAUTION]
+> Once the `Move item to completed list` button is used that item is moved to the `Completed To-Do Items` box and can't be undone at this time.
 
-[!WARNING]
-I haven't figured out how to use local storage yet so if you refresh the page everything will be reset.
+> [!WARNING]
+> I haven't figured out how to use local storage yet so if you refresh the page everything will be reset.
