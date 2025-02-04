@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     newItemLabel.innerHTML = item;
 
     const newItemButton = document.createElement('button');
-    newItemButton.innerHTML = 'Move item to completed list';
+    newItemButton.innerHTML = 'X';
 
     newItemButton.addEventListener('click', (event) => {
       event.preventDefault();
