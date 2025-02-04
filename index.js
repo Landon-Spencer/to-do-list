@@ -10,20 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItemElement = document.createElement('input');
     newItemElement.type = 'checkbox';
     newItemElement.id = item;
-    newItemElement.addEventListener('click', () => {
-      console.log(`Item ${item} has been clicked`);
-
-    })
     const newItemLabel = document.createElement('label');
     newItemLabel.htmlFor = item;
     newItemLabel.innerHTML = item;
+    const newItemButton = document.createElement('button');
+    newItemButton.innerHTML = 'Remove Item';
+    newItemButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      toDoItems.removeChild(newItemElement);
+      toDoItems.removeChild(newItemLabel);
+      toDoItems.removeChild(newItemButton);
+      toDoItems.removeChild(document.querySelector('br'));
+    })
     toDoItems.appendChild(newItemElement);
     toDoItems.appendChild(newItemLabel);
+    toDoItems.appendChild(newItemButton);
     toDoItems.appendChild(document.createElement('br'));
     addItem.value = '';
   });
-
-
-
 });
 
