@@ -1,9 +1,35 @@
+body {
+  background-color: gray;
+}
+
 h1 {
-  color: purple;
+  color: rgb(0, 58, 0);
+  /* background-color: greenyellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addingItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#displayingItems legend, #completedToDoItems legend {
+  color: rgb(0, 58, 0);
+}
+
+#displayingItems, #completedItems{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 input[type='checkbox']:checked + label {
   text-decoration: line-through;
-  text-decoration-color: red;
+  text-decoration-color: rgb(0, 58, 0);
 }
 

@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <h1>To-Do List Application</h1>
-  <form>
-    <input id="addItem", type="text", placeholder="Add To-Do item">
-   <button id="addItemButton">Add item to list</button>
-  </form>
-  <form>
-    <fieldset id="toDoItems">
-      <legend>Your To-Do Items</legend>
-    </fieldset>
-  </form>
-<script src="/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>To-Do List Application</h1>
+    <form id="addingItems">
+      <input id="addItem", type="text", placeholder="Add To-Do item">
+    <button id="addItemButton">Add item to list</button>
+    </form>
+    <form id="displayingItems">
+      <fieldset id="toDoItems">
+        <legend>Your To-Do Items</legend>
+      </fieldset>
+    </form>
+    <form id="completedItems">
+      <fieldset id="completedToDoItems">
+        <legend>Completed To-Do Items</legend>
+        <ul id="listOfCompletedItems">
+        </ul>
+      </fieldset>
+    </form>
+  <script src="/index.js"></script>
+  </body>
 </html>
